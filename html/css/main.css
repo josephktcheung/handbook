@@ -1,5 +1,7 @@
 body {
+  font-size: 18px;
   min-height: 2000px;
+  color: hsla(240, 15%, 30%, 1);
 }
 
 .navbar-static-top {
@@ -11,7 +13,10 @@ body {
   padding: 0;
 }
 
-body {
-  font-size: 18px;
-  min-height: 2000px;
+main {
+  margin-top: 80px;
+}
+
+h2.class-title {
+  margin-top: 0;
 }
