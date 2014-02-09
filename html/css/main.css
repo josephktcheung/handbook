@@ -35,11 +35,42 @@ main { margin-top: 80px; }
 .navbar-default a.navbar-brand { color: hsla( 208, 55.9%, 44.5%, 1 ); }
 .navbar-default a.navbar-brand:hover { color: hsla( 194, 66.4%, 53.3%, 1 ); }
 
+.nav > li > span.current-page {
+  position: relative;
+  display: block;
+  padding: 15px;
+}
+
+.navbar-nav > li > span.current-page {
+  line-height: 20px;
+}
+
+.navbar-nav > li > span.current-page {
+  text-shadow: 0 1px 0 hsla( 0, 0%, 100.0%, 0.25 );
+}
+
+.navbar-default .navbar-nav span.current-page {
+  color: hsla( 2, 64.7%, 50.0%, 1 );
+  background-color: hsla( 0, 0.0%, 90.6%, 1 );
+}
+
+.navbar-default span.navbar-brand,
+.navbar-default span.navbar-brand:hover,
+.navbar-default a.navbar-brand { color: hsla( 208, 55.9%, 44.5%, 1 ); }
+.navbar-default a.navbar-brand:hover { color: hsla( 194, 66.4%, 53.3%, 1 ); }
+
+/* ====== Breadcumb Trail ====== */
+
+.breadcumb-trail {
+  font-size: 14px;
+  margin-top: 13px;
+  color: hsla( 0, 0.0%, 60.0%, 1 );
+}
 
 /* ========== Sidebar ========== */
 
 aside.sidebar-nav {
-  padding-top: 15px;
+  padding-top: 10px;
   background-color: hsla(   0,  0.0%,  98.0%, 1 );
 }
 
@@ -64,17 +95,24 @@ aside.sidebar-nav ol ol ol a:hover { color: hsla(  35, 84.5%,  44.0%, 1 ); }
 
 aside.sidebar-nav .current-page { color: hsla( 2, 64.7%,  50.0%, 1 ); }
 
+.toc-header {
+  font-size: 14px;
+  color: hsla( 0, 0.0%, 60.0%, 1 );
+}
+
 
 /* ========== Headings ========== */
 
+h2.page-title,
 h2.lesson-title {
   font-size: 32px;
   font-weight: normal;
-  margin-top: 0;
+  margin-top: 10px;
   padding: 10px;
   color: hsla( 0, 0.0%, 100.0%, 1 );
-  background-color: hsla( 208, 55.9%, 44.5%, 1 );
 }
+h2.page-title { background-color: hsla( 120, 39.6%, 46.0%, 1 ); }
+h2.lesson-title { background-color: hsla( 208, 55.9%, 44.5%, 1 ); }
 
 h3,
 h4 {
@@ -206,38 +244,11 @@ article footer { margin-top: 40px; }
 
 .the-fine-print { font-size: 12px; }
 
-
-/* ========== Site map ========== */
-
-footer nav ul { list-style-type: none; }
-
-/* ========== Current Page =========== */
-
-.nav > li > span.current-page {
-  position: relative;
-  display: block;
-  padding: 15px;
-}
-
-.navbar-nav > li > span.current-page {
-  line-height: 20px;
-}
-
-.navbar-nav > li > span.current-page {
-  text-shadow: 0 1px 0 hsla( 0, 0%, 100.0%, 0.25 );
-}
-
-.navbar-default .navbar-nav span.current-page {
-  color: hsla( 2, 64.7%, 50.0%, 1 );
-  background-color: hsla( 0, 0.0%, 90.6%, 1 );
-}
-
 footer nav span.current-page {
   font-weight: bold;
   color: hsla( 2, 64.7%, 50.0%, 1 );
 }
 
-.navbar-default span.navbar-brand,
-.navbar-default span.navbar-brand:hover,
-.navbar-default a.navbar-brand { color: hsla( 208, 55.9%, 44.5%, 1 ); }
-.navbar-default a.navbar-brand:hover { color: hsla( 194, 66.4%, 53.3%, 1 ); }
+/* ========== Site map ========== */
+
+footer nav ul { list-style-type: none; }
